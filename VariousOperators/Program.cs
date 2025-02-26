@@ -10,8 +10,7 @@ namespace VariousOperators
             Console.WriteLine("Insere número inteiro-não negativo:");
             string input = Console.ReadLine();
             sbyte n = sbyte.Parse(input);
-              
-    
+            
 
             Console.WriteLine(n/2);
             Console.WriteLine(n<<3);
