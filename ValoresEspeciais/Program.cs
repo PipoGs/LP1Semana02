@@ -30,14 +30,15 @@ namespace ValoresEspeciais
         Console.WriteLine($"Negativo infinito para double: {double.NegativeInfinity}");
         Console.WriteLine($"NaN para double: {double.NaN}");
 
+        // -------------------------------------------
 
-        Console.WriteLine($"Positivo infinito para float: {float.PositiveInfinity}");
-        Console.WriteLine($"Negativo infinito para float: {float.NegativeInfinity}");
-        Console.WriteLine($"NaN para float: {float.NaN}");
+        uint a = uint.MaxValue;
+        Console.WriteLine($"Valor máximo de uint: {a}");
+        uint overflowResult = a + 1;
+        Console.WriteLine($"Resultado do overflow em uint (max + 1): {overflowResult}");
 
-        Console.WriteLine($"Positivo infinito para double: {double.PositiveInfinity}");
-        Console.WriteLine($"Negativo infinito para double: {double.NegativeInfinity}");
-        Console.WriteLine($"NaN para double: {double.NaN}");
+
+
         }
     }
 }
