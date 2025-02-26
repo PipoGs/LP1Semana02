@@ -35,7 +35,14 @@ namespace ValoresEspeciais
         uint a = uint.MaxValue;
         Console.WriteLine($"Valor máximo de uint: {a}");
         uint overflowResult = a + 1;
-        Console.WriteLine($"Resultado do overflow em uint (max + 1): {overflowResult}");
+        Console.WriteLine($"Overflow em uint: {overflowResult}");
+
+        float maxFloat = float.MaxValue;
+        Console.WriteLine($"Valor máximo de float: {maxFloat}");
+        float overflowPositive = maxFloat * 2;
+        Console.WriteLine($"Overflow positivo em float: {overflowPositive}");
+        float overflowNegative = -maxFloat * 2;
+        Console.WriteLine($"Overflow negativo em float {overflowNegative}");
 
 
 
