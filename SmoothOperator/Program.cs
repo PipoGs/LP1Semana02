@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Security.Cryptography;
-using System.Threading.Tasks.Dataflow;
 
 namespace SmoothOperator
 {
