@@ -11,16 +11,21 @@ namespace Cilindro
             Console.WriteLine("Insere o Raio do Cilindro: ");
             string input2 = Console.ReadLine();
 
-            int n = int.Parse(input);
-            int n2 = int.Parse(input2);
-            float pi = MathF.PI;
+            double n = double.Parse(input);
+            double n2 = double.Parse(input2);
+            double pi = Math.PI;
+            double n3 = 2;
 
 
-            float V = n * (n2 * n2) * pi;
+            double V = n * (n2 * n2) * pi;
             string limit = $"{V:f3}";
+
+            double S = n3 * pi * n2 * (n2 + n);
+            string limit2 = $"{S:f3}";
 
             
             Console.WriteLine(limit);
+            Console.WriteLine(limit2);
         }
     }
 }
