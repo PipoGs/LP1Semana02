@@ -34,7 +34,7 @@ namespace ChatGPTZero
                     case "EXIT":
                         return;
                     default:
-                        response = "You got me, I'm not THAT smart!";
+                        response = "Sorry Can you repeat?";
                         break;
                         
                 }
