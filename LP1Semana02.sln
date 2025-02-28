@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakContinue", "BreakConti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatGPTOne", "ChatGPTOne\ChatGPTOne.csproj", "{7919E6F7-EA68-454F-BED4-4AB4FB81D695}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessTheNumber", "GuessTheNumber\GuessTheNumber.csproj", "{CEEF5E03-577E-4571-A7E5-7E15FB0158C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +62,9 @@ Global
 		{7919E6F7-EA68-454F-BED4-4AB4FB81D695}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7919E6F7-EA68-454F-BED4-4AB4FB81D695}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7919E6F7-EA68-454F-BED4-4AB4FB81D695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEEF5E03-577E-4571-A7E5-7E15FB0158C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEEF5E03-577E-4571-A7E5-7E15FB0158C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEEF5E03-577E-4571-A7E5-7E15FB0158C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEEF5E03-577E-4571-A7E5-7E15FB0158C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
