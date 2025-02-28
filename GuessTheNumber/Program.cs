@@ -7,37 +7,58 @@ namespace GuessTheNumber
     {
         private static void Main(string[] args)
         {
+            Random rnd = new Random();
+            int numberToGuess = rnd.Next(31);
+
+            int turn = 0;
+
             while (true)
             {
-                Random rnd = new Random();
-                int numberToGuess = rnd.Next(31);
+
+                turn++;
 
                 string question;
 
-                Console.Write(" Write a whole number from 0 to 30: ");
+                Console.Write("Insert Number: ");
                 question = Console.ReadLine();
 
                 int QuestionC = int.Parse(question);
 
                 if (QuestionC > 30)
                 {
-                    Console.Write("Out of Scope, Try again,");
+                    Console.WriteLine("Numbers must be between 0 and 30. Try again.");
+                    continue;
                 }
 
                 else if (QuestionC < 0)
                 {
-                    Console.Write("Out of Scope, Try again,");
+                    Console.WriteLine("Numbers must be between 0 and 30. Try again.");
+                    continue;
+                }
+
+                else if (QuestionC < numberToGuess)
+                {
+                    Console.WriteLine($"The hidden number is higher than {QuestionC}. Try Again");
+                    continue;
                 }
 
                 else if (QuestionC > numberToGuess)
                 {
-                    Console.Write("The number you wrote is higher than the Number to guess, Try again, ");
+                    Console.WriteLine($"The hidden number is lower than {QuestionC}. Try Again");
+                    continue;
                 }
 
-                else if (QuestionC > numberToGuess)
+                else if (QuestionC == numberToGuess)
                 {
-                    Console.Write("The number you wrote is lower than the Number to guess, Try again, ");
+                    Console.WriteLine($"You found tge hidden number {QuestionC} after {turn} tries.");
+                    continue;
                 }
+
+                else
+                {
+                    break;
+                }
+                
 
 
 
