@@ -50,7 +50,7 @@ namespace GuessTheNumber
 
                 else if (QuestionC == numberToGuess)
                 {
-                    Console.WriteLine($"You found tge hidden number {QuestionC} after {turn} tries.");
+                    Console.WriteLine($"You found the hidden number {QuestionC} after {turn} tries.");
                     continue;
                 }
 
